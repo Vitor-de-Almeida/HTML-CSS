@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'FonteAndroide', format(Opentype);
-    src: url(fontes/idroid.otf);
+    font-family: 'androide', format(Opentype);
+    src:url(fontes//idroid.otf);
 }
 
 *{
@@ -12,14 +12,18 @@
 }
 
 body {
-    background-color: #83E2AB;
+    background-color: #E8E5C2;
     margin: 0px;
+}
+
+span {
+    color: #021a0f;
 }
 
 header > h1 {
     margin: 0px;
     text-align: center;
-    font-family: 'FonteAndroide', Helvetica, sans-serif;
+    font-family: 'androide', Helvetica, sans-serif;
     color: white;
 }
 
@@ -30,9 +34,13 @@ header > p {
 
 nav > a {
     text-decoration: none;
-    padding: 10px;
+    margin: 12px;
     color: white;
     font-size: 1.1em;
+}
+
+a:hover {
+    background-color: #A2E9C1;
 }
 
 header {
@@ -46,8 +54,14 @@ header {
 
 h1 {
     margin: 0px;
-    font-family: 'FonteAndroide', Helvetica, sans-serif;
+    font-family: 'androide', Helvetica, sans-serif;
     color: #0C3A25;
+}
+
+article > h3 {
+    background-color: #3b9761b2;
+    color: white;
+    padding: 8px;
 }
 
 p {
@@ -68,13 +82,27 @@ p {
     color: #0C3A25;
 }
 
+main > div {
+    background-color: #15512E;
+    margin: -9px;
+    border-radius: 1px;
+}
+
+.caixa-de-artigo {
+    background-color: #A2E9C1;
+    border-radius: 10px;
+    margin: 24px;
+    padding: 10px;
+    
+}
+
 main {
     background-color: white;
     padding: 8px;
-    height: 2650px;
+    height: 2400px;
     width: 1500px;
     margin: auto;
-    border-radius: 1px;
+    border-radius: 0px 0px 10px 10px;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.479);
 
 }
@@ -85,8 +113,9 @@ section {
 
 footer {
     background-color: #2BA15C;
+    color:white;
     text-align: center;
-    margin: auto;
+    margin-top: 100px;
     padding: 8px;
     width: 1500px;
     border-radius: 2px;
