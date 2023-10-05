@@ -41,6 +41,10 @@ body {
     font-family: var(--font-standard);
 }
 
+a.externo::after {
+    content: '\00A0\1F517'
+}
+
 header {
     background-image: linear-gradient(to bottom, var(--color3), var(--color4));
     min-height: 150px;
@@ -52,6 +56,7 @@ header > h1 {
     color: white;
     font-family: var(--font-highlighted);
     font-size: 3em;
+    font-weight: normal;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
@@ -102,12 +107,15 @@ main {
 main h1 {
     color: var(--color5);
     font-family: var(--font-android);
+    font-weight: normal;
+    font-size: 1.8em;
 }
 
 main h2 {
     color: var(--color4);
     font-family: var(--font-android);
     font-size: 1.3em;
+    font-weight: normal;
     background-image: linear-gradient(to right, var(--color1), transparent);
     text-indent: 8px;
     transition-duration: 1s;
@@ -165,9 +173,50 @@ main img.small {
     margin: auto;
 }
 
+div.video {
+    background-color: var(--color5);
+}
+
+aside {
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.295);
+}
+
+aside > h3 {
+    background-color: var(--color4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position:inside;
+    columns: 2;
+}
+
 footer {
     background-color: var(--color5);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--color1)
 }
 
 
