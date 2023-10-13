@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas no HTML</title>
+    <style>
+        #bordatabela1 {
+            border: 1px solid black;
+        }
+
+        .bordalinha {
+            border: 1px solid blue;
+        }
+
+        #bordatabela2{
+            border-collapse: collapse;
+            background:#FFFFF0;
+            text-align: center;
+        }
+
+        .bordacabecalho {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .bordalinha2 {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .realcelinha tr:hover {
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Criação de Tabelas no HTML</h1>
+    
+    <table id="bordatabela1" class="realcelinha">
+        <tr class="bordalinha">
+            <th class="bordalinha">Coluna 1</th>
+            <th class="bordalinha">Coluna 2</th>
+            <th class="bordalinha">Coluna 3</th>
+            <th class="bordalinha">Coluna 4</th>
+        </tr>
+        <tr>
+            <td class="bordalinha">Dado 01</td>
+            <td class="bordalinha">Dado 02</td>
+            <td class="bordalinha">Dado 03</td>
+            <td class="bordalinha">Dado 04</td>
+        </tr>
+        <tr>
+            <td>Dado 05</td>
+            <td>Dado 06</td>
+            <td>Dado 07</td>
+            <td>Dado 08</td>
+        </tr>
+        <tr>
+            <td>Dado 09</td>
+            <td>Dado 10</td>
+            <td>Dado 11</td>
+            <td>Dado 12</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>Tabelas com Cabeçalho</h1>
+
+    <table id="bordatabela2" class="realcelinha">
+
+        <thead>
+            <tr>
+                <th class="bordacabecalho">Nome</th>
+                <th class="bordacabecalho">Idade</th>
+                <th class="bordacabecalho">Profissão</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="bordalinha2">Marina</td>
+                <td class="bordalinha2">32</td>
+                <td class="bordalinha2">Programador</td>
+            </tr>
+            <tr>
+                <td class="bordalinha2">Cristofer</td>
+                <td class="bordalinha2">34</td>
+                <td class="bordalinha2">Programador</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <h2>Tableas com Células Personalizadas</h2>
+
+    <table border="3">
+        <thead>
+            <tr>
+                <th colspan="2">Informações Pessoais</th>
+                <th>Contato</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nome</td>
+                <td>João</td>
+                <td rowspan="2">Telefone: 41 3612 1234</td>
+            </tr>
+            <tr>
+                <td>Idade:</td>
+                <td>30</td>
+ 
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
