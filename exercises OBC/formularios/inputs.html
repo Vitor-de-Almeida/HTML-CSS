@@ -10,8 +10,8 @@
 
     <form action="">
         <!-- Campo de Texto -->
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome" required>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required placeholder="Ex:Vitor Renan...">
         <br><br>
 
         <!-- Campo de Email -->
@@ -20,8 +20,52 @@
         <br><br>
 
         <!-- Campo de Senha -->
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha">
+        <br><br>
 
-        
+        <!-- Campo de Seleção Radio -->
+        <label>Gênero</label><br>
+        <input type="radio" name="genero" id="masculino" value="m">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="feminino" value="f">
+        <label for="feminino">Feminino</label>
+        <br><br>
+
+        <!-- Campo de Seleção Múltipla -->
+        <label>Interesses:</label>
+        <input type="checkbox" name="interesses" id="backend" value="backend">
+        <label for="backend">Back-end</label>
+        <input type="checkbox" name="interesses" id="frontend" value="frontend">
+        <label for="frontend">Front-end</label>
+        <input type="checkbox" name="interesses" id="mobile" value="mobile">
+        <label for="mobile">Mobile</label>
+        <br><br>
+
+        <!-- Campo de data -->
+        <label for="datadenascimento">Data de Nascimento</label>
+        <input type="date" name="nascimento" id="datadenascimento">
+        <br><br>
+
+        <!-- Campo de arquivo(uploads) -->
+        <label for="fotodeperfil">Foto de Perfil</label>
+        <input type="file" name="avatar" id="fotodeperfil">
+        <br><br>
+
+        <!-- Campo de Caixa de Seleção -->
+        <label for="situacao">Situação Atual:</label>
+        <select name="situacao" id="situacao">
+            <option value="" selected disabled>Selecione uma das opções.</option>
+            <option value="estudanteprogramacao">Estudando para me tornar uma programador.</option>
+            <option value="estudantepolicial">Estudando para me tornar um policial.</option>
+            <option value="estudantemedico">Estudando para me tornar um médico.</option>
+        </select>
+        <br><br>
+        <!-- Campo de área de texto de múltiplas linhas -->
+        <label for="sobre">Sobre mim:</label>
+        <textarea name="sobre" id="sobre" cols="30" rows="10" placeholder="Fale um pouco sobre você..."></textarea>
+        <br><br>
+
         <button type="submit">Enviar</button>
     </form>
 </body>
