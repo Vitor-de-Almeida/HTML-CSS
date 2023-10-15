@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 004 - Formulário de Inscrição</title>
+</head>
+<body>
+    <h1>Exercício 004 - Formulário de Inscrição</h1>
+
+    <form action="#" method="post">
+        <div>
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" id="nome" required>   <!--Criado uma Input para que o usuário possa digiar seu nome.-->
+        </div>
+
+        <br>
+        
+        <div>
+            <label for="email">E-mail:</label><br>
+            <input type="email" name="email" id="email"> <!--Criado uma Input para que o usuário possa digitar seu e-mail.-->
+        </div>
+
+        <br>
+
+        <div>
+            <label for="whatsapp">Digite seu WhatsApp:</label><br>
+            <input type="tel" name="whatsapp" id="whatsapp"> <!--Criado uma Input para que o usuário possa digitar seu whatsapp.-->
+        </div>
+
+        <br>
+
+        <div>
+            <label>Escolha em qual área quer atuar:</label>
+            <br>
+            <input type="radio" name="areadeatuacao" id="desenvolvimento" value="dev">
+            <label for="desenvolvimento">Desenvolvimento;</label>
+            <br>
+            <input type="radio" name="areadeatuacao" id="qualityassurance" value="qa"> <!--Criado uma Input para que o usuário possa selecionar sua área de atuação.-->
+            <label for="qualityassurance">Quality Assuranca (QA);</label>
+            <br>
+            <input type="radio" name="areadeatuacao" id="analisededados" value="dados">
+            <label for="analisededados">Análise de Dados e Infraestrutura.</label>
+        </div>
+        
+        <br>
+
+        <div>
+            <label for="observacoes">Observações:</label>
+            <br>
+            <textarea name="observacoes" id="observacoes" cols="30" rows="2"></textarea> <!--Criado uma Textarea para que o usuário possa inserir observações.-->
+        </div>
+
+        <br>
+
+        <div>
+            <input type="checkbox" name="novidadesemail" id="novidadesemail">
+            <label for="novidadesemail">Desejo receber novidades e ofertas por email.</label> <!--Criado uma Input para que o usuário possa selecionar o campo receber novidades e ofertas.-->
+        </div>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+        <!-- <button type="submit">Clique aqui para enviar</button> -->
+    </form>
+</body>
+</html>
