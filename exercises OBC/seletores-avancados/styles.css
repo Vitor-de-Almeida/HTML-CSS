@@ -1,0 +1,46 @@
+/* seletor :nth-child() */
+
+li:nth-child(2) {
+    color: #f2d5;
+}
+
+li:nth-child(2n+1) { /*posso usar odd ou even*/
+    color: #00f;
+}
+
+li:hover {
+    background-color: aqua;
+}
+
+input:focus {
+    background-color: blue;
+}
+
+li:active:nth-child(2) {
+    background-color: black;
+}
+
+/* pseudo-elementos -> ::before e ::after */
+
+li::before {
+    content: "(antes) ";
+    color: green;
+}
+
+li::after {
+    content: " (depois)";
+    color: grey;
+}
+
+li:first-child {
+    color: orangered;
+}
+
+li:last-child {
+    color: orange;
+}
+
+/* li:not(:first-child) {
+    color: cadetblue;
+} */
+
