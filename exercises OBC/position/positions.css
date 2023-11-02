@@ -1,0 +1,36 @@
+main {
+    position: relative;
+}
+
+.p-static {
+    position: static;
+    height: 5rem;
+    /* top, bottom, left, right */
+    top: 10rem;
+    left: 50%; /* não altera, pois o position é static */
+}
+
+.p-relative {
+    position: relative;
+    top: -2rem;
+    width: 50%;
+    margin: 0 4rem;
+    /* altera a posição do bloco, porém mantém a posição original intacta */
+}
+
+.p-absolute {
+    position: absolute; /*se torna absoluto e móvel em relação página*/
+    top: 0;
+    right: 0;
+}
+
+.p-fixed {
+ position: fixed; /*o bloco fica fixo mesmo com a página responsiva */
+ right:2rem;
+ bottom:2rem;
+}
+
+.p-sticky {
+    position: sticky;
+    top: 0;
+}
